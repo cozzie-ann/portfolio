@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- This is the document type declaration, lets the browser know that it's an HTML5 document -->
 <head>
   <meta charset="UTF-8">
+  <!-- This specifies the character encoding as UTF-8, which supports various languages -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This ensures that the website is responsive and adapts to different screen sizes -->
+  
   <title>Anna's Portfolio</title>
+  <!-- This defines the page title shown on the browser tab -->
+  
+  <!-- Link to the Google font  -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap">
+  
+  <!-- Link to the CSS file that contains the styles for the page -->
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <!-- Header Navigation -->
+  <!-- Header Navigation: Creates a fixed navigation bar at the top of the webpage -->
   <header class="navbar">
     <ul>
+      <!-- Nav links that allow users to jump to different sections of the page -->
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About Me</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -22,67 +34,71 @@
   <!-- Home Section -->
   <header class="home" id="home">
     <div class="circle-ombre"></div>
+    <!-- This div adds a circular gradient background element as decoration -->
     <div class="intro">
+      <!-- This section contains an introductory message welcoming Potential Employers/Clients to my portfolio. -->
       <h1>Welcome To Anna's Portfolio</h1>
       <p>Software Engineer | Web Developer | Tech Enthusiast</p>
+      <!-- This is a button that leads the user to the "About" section of the page. -->
       <a href="#about" class="btn">Learn More</a>
     </div>
   </header>
 
   <!-- About Me Section -->
-<section class="about" id="about">
-  <div class="circle-ombre"></div>
-  <h2>About Me</h2>
-  <p>Hi, I’m Anna Mupariwa, a technology enthusiast with a passion for creating solutions that make a positive difference in people’s lives. I believe in the power of innovation to drive change, and I’m always exploring new ways to use technology to solve real-world problems. My journey in tech is fueled by curiosity and a constant drive to learn, adapt, and create meaningful experiences.</p>
-  <a href="https://drive.google.com/uc?export=download&id=10iBwUCkeTNgV40cqk45qlaOHPMOeLdaq" class="btn download-cv" target="_blank" download="Anna_CV.pdf">Download My CV</a>
-</section>
-
+  <section class="about" id="about">
+    <div class="circle-ombre"></div>
+    <h2>About Me</h2>
+    <p>Hi, I’m Anna Mupariwa, a technology enthusiast... </p>
+    <!-- A button to download my CV directly. -->
+    <a href="https://drive.google.com/uc?export=download&id=10iBwUCkeTNgV40cqk45qlaOHPMOeLdaq" class="btn download-cv" target="_blank" download="Anna_CV.pdf">Download My CV</a>
+  </section>
 
   <!-- Projects Section -->
   <section class="projects" id="projects">
     <div class="circle-ombre"></div>
     <h2>Projects</h2>
     <div class="project-grid">
+      <!-- Memory Card Game Project -->
       <div class="project">
         <h3>Memory Card Game</h3>
-        <p>A web-based memory card game where players flip cards to find matching pairs within a set time. Features include multiple difficulty levels, a responsive design, and a timer. The game adjusts to various screen sizes and offers a user-friendly interface.</p>
-        <br><p><strong>Technologies Used:</strong></p><br>
+        <!-- Description of the game and its features -->
+        <p>A web-based memory card game where players flip cards...</p>
+        <!-- List of technologies used to build the project -->
+        <p><strong>Technologies Used:</strong></p>
         <p><strong>HTML:</strong> Structuring the game layout</p>
         <p><strong>CSS:</strong> Styling the game with a responsive grid layout</p>
         <p><strong>JavaScript:</strong> Card interactions, game logic, and timer functionality</p>
-        <p><a href="https://github.com/cozzie-ann/memory-card-game" target="_blank">View on GitHub</a></p> <!-- GitHub link -->
-    </div>
-    
-    <div class="project">
+        <p><a href="https://github.com/cozzie-ann/memory-card-game" target="_blank">View on GitHub</a></p>
+      </div>
+      
+      <!-- Valentine's Day Website Project -->
+      <div class="project">
         <h3>Valentine's Day Website</h3>
-        <p>An engaging Valentine's Day website designed to interact with users through a simple and fun interface. The website asks users, "Will you be my Valentine?" and provides different responses based on their input:</p>
-        <p>If the user selects "No," they are prompted to try again.</p>
-        <p>If the user selects "Yes," a confetti animation is displayed to celebrate the affirmative response.</p>
-        <br><p><strong>Technologies Used:</strong></p><br>
+        <p>An engaging Valentine's Day website designed to interact with users...</p>
+        <p><strong>Technologies Used:</strong></p>
         <p><strong>HTML:</strong> Structure and layout of the website</p>
         <p><strong>CSS:</strong> Styling, animations, and visual effects</p>
         <p><strong>JavaScript:</strong> Handling user input and triggering animations</p>
-        <p><a href="https://github.com/cozzie-ann/cool-stuff" target="_blank">View on GitHub</a></p> <!-- GitHub link -->
-    </div>
-    
-    <div class="project">
+        <p><a href="https://github.com/cozzie-ann/cool-stuff" target="_blank">View on GitHub</a></p>
+      </div>
+
+      <!-- Hangman Game Project -->
+      <div class="project">
         <h3>Hangman Game</h3>
-        <p>A Java-based implementation of the classic Hangman game. Players guess letters to reveal a hidden word while a stickman visual shows their remaining attempts. Features include:</p>
-        <p>Interactive terminal gameplay</p>
-        <p>Dynamic stickman representation</p>
-        <p>File-based word list</p>
-        <br><p><strong>Technologies Used:</strong></p><br>
+        <p>A Java-based implementation of the classic Hangman game...</p>
+        <p><strong>Technologies Used:</strong></p>
         <p><strong>Java:</strong> Core game logic, file handling, and user input</p>
-        <p><a href="https://github.com/cozzie-ann/hangman-game" target="_blank">View on GitHub</a></p> <!-- GitHub link -->
+        <p><a href="https://github.com/cozzie-ann/hangman-game" target="_blank">View on GitHub</a></p>
+      </div>
     </div>
-  </div>
- </section>
+  </section>
 
   <!-- Skills Section -->
   <section class="skills" id="skills">
     <div class="circle-ombre"></div>
     <h2>Skills</h2>
     <div class="skills-list">
+      <!-- Displaying your key skills as blocks. -->
       <div class="skill">HTML</div>
       <div class="skill">CSS</div>
       <div class="skill">JavaScript</div>
@@ -96,16 +112,20 @@
   <section class="contact" id="contact">
     <div class="circle-ombre"></div>
     <h2>Contact Me</h2>
+    
+    <!-- Contact form where users can input their details and messages for me -->
     <form id="contact-form">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+
+    <!-- Empty div where the form success/error message will appear. -->
     <div id="form-message" class="form-message"></div>
   </section>
 
-  <!-- Navbar Footer -->
+  <!-- Navbar Footer: Repeating the navigation menu at the bottom of the page. -->
   <div class="navbar-footer">
     <header class="navbar">
       <ul>
@@ -118,7 +138,7 @@
     </header>
   </div>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
     <p>&copy; 2024 Anna's Portfolio. All Rights Reserved.</p>
     <div class="social-links">
@@ -127,21 +147,26 @@
     </div>
   </footer>
 
+  <!-- JavaScript for handling form submissions using Formspree -->
   <script>
+    // Adding an event listener for form submission
     document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
+      event.preventDefault(); // Prevent the default form submission action
 
+      // Using the Fetch API to send the form data to Formspree
       fetch('https://formspree.io/f/xpwanvwj', {
-        method: 'POST',
+        method: 'POST', // The HTTP method is POST since we are submitting data
         headers: {
-          'Accept': 'application/json'
+          'Accept': 'application/json' // The format we expect in response is JSON (Easier to read for both the machine and me)
         },
-        body: new FormData(this)
-      }).then(response => response.json())
+        body: new FormData(this) // Create a FormData object with the form data (so that we know if the form was submitted successfully or not )
+      }).then(response => response.json()) // Converting the response to JSON
         .then(data => {
+          // If the form is submitted successfully, display a success message
           document.getElementById('form-message').textContent = 'Message sent successfully!';
-          document.getElementById('contact-form').reset();
+          document.getElementById('contact-form').reset(); // Reset the form
         }).catch(error => {
+          // If there's an error, display an error message
           document.getElementById('form-message').textContent = 'There was an error sending your message.';
         });
     });

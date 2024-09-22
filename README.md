@@ -1,7 +1,7 @@
 
 # Anna's Portfolio
 
-Welcome to Anna's Portfolio! This is a personal portfolio website showcasing my skills, projects, and experience as a software engineer and web developer.
+Welcome to Anna's Portfolio! This is a personal portfolio website showcasing my skills, projects, and experience as an software engineer and web developer.
 
 ## Table of Contents
 
@@ -50,7 +50,7 @@ To run this project locally, follow these steps:
 
 2. **Navigate to the project directory:**
 
-    ```bash
+    ```
     cd anna-portfolio
     ```
 
@@ -68,17 +68,17 @@ To run this project locally, follow these steps:
 
 ## Contributing
 
-Contributions to this portfolio are welcome! If you have suggestions or improvements, please feel free to fork the repository and submit a pull request.
+If you have suggestions or improvements, please feel free to let me know via Email or LinkedIn before you submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. 
 
 ## Contact
 
 - **Email:** [annamupariwa217@gmail.com]
-- **GitHub:** [https://github.com/cozzie-ann](https://github.com/cozzie-ann)
-- **LinkedIn:** [https://linkedin.com/in/anna-mupariwa](https://linkedin.com/in/anna-mupariwa)
+- **GitHub:** [https://github.com/cozzie-ann]
+- **LinkedIn:** [https://linkedin.com/in/anna-mupariwa]
 
 Thank you for visiting my portfolio!
 PLEASE HIRE ME :)

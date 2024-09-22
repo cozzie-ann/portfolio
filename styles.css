@@ -1,329 +1,330 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
-    scroll-behavior: smooth;
+    margin: 0; /* Reset default margin for all elements */
+    padding: 0; /* Reset default padding for all elements */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Playfair Display', serif; /* Set a serif font for all text */
+    scroll-behavior: smooth; /* Enable smooth scrolling behavior */
 }
 
 body {
-    background: linear-gradient(to bottom, #D8BFD8, #E6E6FA); /* Ombre effect */
-    color: #662a5c;
-    line-height: 1.6;
+    background: linear-gradient(to bottom, #D8BFD8, #E6E6FA); /* Create a vertical ombre background */
+    color: #662a5c; /* Set text color */
+    line-height: 1.6; /* Set line height for better readability */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 html {
-    width: 100%;
+    width: 100%; /* Ensure the HTML element takes the full width */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Navbar Styles */
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 100;
+    position: fixed; /* Fix the navbar to the top of the viewport ( creating layouts that look good on a variety of devices and screen sizes) */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 100%; /* Full width of the viewport */
+    background-color: #fff; /* Set background color */
+    padding: 10px; /* Add padding inside the navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    z-index: 100; /* Ensure the navbar is above other elements */
 }
 
 .navbar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    list-style-type: none; /* Remove bullet points from list */
+    display: flex; /* makes it easier to design responsive layouts */
+    justify-content: center; /* Center the list items */
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
 }
 
 .navbar ul li {
-    margin: 0 15px;
+    margin: 0 15px; /* Add horizontal space between list items */
 }
 
 .navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold; /* Bold text */
-    font-size: 1.2rem; /* Slightly larger font */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+    font-weight: bold; /* Make the text bold */
+    font-size: 1.2rem; /* Slightly larger font size for links */
 }
 
 .navbar ul li a:hover {
-    color: #666;
+    color: #666; /* Change color on hover for links */
 }
 
 /* Home Section */
 header.home {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative; /* Position relative for absolute child elements */
+    text-align: center; /* Center text */
     overflow: hidden; /* Hide overflow to prevent scroll */
 }
 
 header.home .circle-ombre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: 450px;
-    background: radial-gradient(circle, rgb(255, 255, 255), rgba(255, 255, 255, 0.5) 70%);
-    border-radius: 50%;
-    filter: blur(50px);
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    position: absolute; /* Position absolutely within the header */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 600px; /* Set width of the circle */
+    height: 450px; /* Set height of the circle */
+    background: radial-gradient(circle, rgb(255, 255, 255), rgba(255, 255, 255, 0.5) 70%); /* Create a radial gradient background */
+    border-radius: 50%; /* Make the shape a circle */
+    filter: blur(50px); /* Apply blur effect */
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: -1; /* Place behind other elements */
 }
 
 .intro {
-    position: relative;
-    z-index: 1;
+    position: relative; /* Allow z-index to work */
+    z-index: 1; /* Ensure this element is above the circle */
 }
 
 .intro h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #333;
+    font-size: 3rem; /* Set font size for the main heading */
+    margin-bottom: 1rem; /* Space below the heading */
+    color: #333; /* Set heading color */
 }
 
 .intro p { 
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem; /* Set font size for introductory paragraph */
+    margin-bottom: 2rem; /* Space below the paragraph */
 }
 
 .btn {
-    padding: 0.75rem 2rem;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
+    padding: 0.75rem 2rem; /* Add padding to the button */
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Set font size */
+    border-radius: 5px; /* Round button corners */
 }
 
 .btn:hover {
-    background-color: #555;
+    background-color: #555; /* Change background on hover */
 }
 
 /* About Me Section */
 .about {
-    position: relative;
-    padding: 100px 50px;
-    text-align: center;
+    position: relative; /* Allow z-index to work */
+    padding: 100px 50px; /* Add padding */
+    text-align: center; /* Center text */
     overflow: hidden; /* Hide overflow to prevent scroll */
 }
 
 .about .circle-ombre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 650px;
-    height: 350px;
-    background: radial-gradient(circle, #c067c0d0, rgba(255, 255, 255, 0.5) 70%);
-    border-radius: 50%;
-    filter: blur(30px);
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    position: absolute; /* Position absolutely within the about section */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 650px; /* Set width of the circle */
+    height: 350px; /* Set height of the circle */
+    background: radial-gradient(circle, #c067c0d0, rgba(255, 255, 255, 0.5) 70%); /* Create a radial gradient background */
+    border-radius: 50%; /* Make the shape a circle */
+    filter: blur(30px); /* Apply blur effect */
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: -1; /* Place behind other elements */
 }
 
 .about h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
+    font-size: 2.5rem; /* Set font size for the section heading */
+    color: #333; /* Set heading color */
+    margin-bottom: 20px; /* Space below the heading */
+    position: relative; /* Allow z-index to work */
+    z-index: 1; /* Ensure this element is above the circle */
 }
 
 .about p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto;
+    font-size: 1.2rem; /* Set font size for paragraph */
+    line-height: 1.6; /* Set line height for better readability */
+    color: #555; /* Set paragraph color */
+    max-width: 800px; /* Limit maximum width for better layout */
+    margin: 0 auto; /* Center the paragraph */
 }
 
 .download-cv {
-    display: inline-block;
-    padding: 0.75rem 2rem;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
+    display: inline-block; /* Make the button an inline block */
+    padding: 0.75rem 2rem; /* Add padding */
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2rem; /* Set font size */
+    border-radius: 5px; /* Round button corners */
     margin-top: 20px; /* Space above the button */
 }
 
 .download-cv:hover {
-    background-color: #555;
+    background-color: #555; /* Change background on hover */
 }
 
 /* Projects Section */
 .projects {
-    position: relative;
-    padding: 100px 50px;
-    text-align: center;
+    position: relative; /* Allow z-index to work */
+    padding: 100px 50px; /* Add padding */
+    text-align: center; /* Center text */
     overflow: hidden; /* Hide overflow to prevent scroll */
 }
 
 .projects .circle-ombre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1200px;
-    height: 1350px;
-    background: radial-gradient(circle, #c067c0d0, rgba(255, 255, 255, 0.5) 70%);
-    border-radius: 50%;
-    filter: blur(30px);
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    position: absolute; /* Position absolutely within the projects section */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 1200px; /* Set width of the circle */
+    height: 1350px; /* Set height of the circle */
+    background: radial-gradient(circle, #c067c0d0, rgba(255, 255, 255, 0.5) 70%); /* Create a radial gradient background */
+    border-radius: 50%; /* Make the shape a circle */
+    filter: blur(30px); /* Apply blur effect */
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: -1; /* Place behind other elements */
 }
 
 .projects h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
+    font-size: 2.5rem; /* Set font size for the section heading */
+    color: #333; /* Set heading color */
+    margin-bottom: 20px; /* Space below the heading */
+    position: relative; /* Allow z-index to work */
+    z-index: 1; /* Ensure this element is above the circle */
 }
 
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
+    display: grid; /* Use grid layout for projects */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create responsive columns */
+    gap: 20px; /* Space between grid items */
+    max-width: 1000px; /* Limit maximum width for the grid */
+    margin: 0 auto; /* Center the grid */
 }
 
 .project {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    background-color: #fff; /* Set background color for project items */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Round corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .project:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Lift project item on hover */
 }
 
 .project h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
+    font-size: 1.5rem; /* Set font size for project title */
+    margin-bottom: 10px; /* Space below the title */
+    color: #333; /* Set title color */
 }
 
 .project p {
     font-size: 1rem;
-    color: #555;
+    /* Set font size for project description */
+    color: #555; /* Set description color */
 }
 
 /* Skills Section */
 .skills {
-    position: relative;
-    padding: 100px 50px;
-    text-align: center;
+    position: relative; /* Allow z-index to work */
+    padding: 100px 50px; /* Add padding */
+    text-align: center; /* Center text */
     overflow: hidden; /* Hide overflow to prevent scroll */
 }
 
 .skills .circle-ombre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 600px;
-    height: 400px;
-    background: radial-gradient(circle, #c067c0d0, rgba(255, 255, 255, 0.5) 70%);
-    border-radius: 50%;
-    filter: blur(30px);
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    position: absolute; /* Position absolutely within the skills section */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 600px; /* Set width of the circle */
+    height: 400px; /* Set height of the circle */
+    background: radial-gradient(circle, #c067c0d0, rgba(255, 255, 255, 0.5) 70%); /* Create a radial gradient background */
+    border-radius: 50%; /* Make the shape a circle */
+    filter: blur(30px); /* Apply blur effect */
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: -1; /* Place behind other elements */
 }
 
 .skills h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
+    font-size: 2.5rem; /* Set font size for the section heading */
+    color: #333; /* Set heading color */
+    margin-bottom: 20px; /* Space below the heading */
+    position: relative; /* Allow z-index to work */
+    z-index: 1; /* Ensure this element is above the circle */
 }
 
 .skills-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: flex; /* makes it easier to design responsive layouts */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 30px; /* Space between skill items */
 }
 
 .skills-list .skill {
-    background-color: lavenderblush;
-    padding: 20px;
-    border-radius: 8px;
-    font-size: 1.2rem;
-    color: #333;
+    background-color: lavenderblush; /* Set background color for skill items */
+    padding: 20px; /* Add padding */
+    border-radius: 8px; /* Round corners */
+    font-size: 1.2rem; /* Set font size */
+    color: #333; /* Set text color */
 }
 
 /* Contact Section */
 .contact {
-    position: relative;
-    padding: 100px 50px;
-    text-align: center;
+    position: relative; /* Allow z-index to work */
+    padding: 100px 50px; /* Add padding */
+    text-align: center; /* Center text */
     overflow: hidden; /* Hide overflow to prevent scroll */
 }
 
 .contact .circle-ombre {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 1000px;
-    height: 550px;
-    background: radial-gradient(circle, #c067c0d0, rgba(255, 255, 255, 0.5) 70%);
-    border-radius: 50%;
-    filter: blur(30px);
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    position: absolute; /* Position absolutely within the contact section */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 1000px; /* Set width of the circle */
+    height: 550px; /* Set height of the circle */
+    background: radial-gradient(circle, #c067c0d0, rgba(255, 255, 255, 0.5) 70%); /* Create a radial gradient background */
+    border-radius: 50%; /* Make the shape a circle */
+    filter: blur(30px); /* Apply blur effect */
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: -1; /* Place behind other elements */
 }
 
 .contact h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 1;
+    font-size: 2.5rem; /* Set font size for the section heading */
+    color: #333; /* Set heading color */
+    margin-bottom: 20px; /* Space below the heading */
+    position: relative; /* Allow z-index to work */
+    z-index: 1; /* Ensure this element is above the circle */
 }
 
 .contact form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 600px; /* Limit maximum width for the form */
+    margin: 0 auto; /* Center the form */
 }
 
 .contact form input, .contact form textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+    width: 100%; /* Full width for input and text area */
+    padding: 15px; /* Add padding */
+    margin-bottom: 20px; /* Space below the fields */
+    border-radius: 5px; /* Round corners */
+    border: 1px solid #ccc; /* Set border */
+    font-size: 1rem; /* Set font size */
 }
 
 .contact form button {
-    padding: 0.75rem 2rem;
-    background-color: #0a0808;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
+    padding: 0.75rem 2rem; /* Add padding */
+    background-color: #0a0808; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round corners */
+    font-size: 1.2rem; /* Set font size */
 }
 
 .contact form button:hover {
-    background-color: #9b457e;
+    background-color: #9b457e; /* Change background on hover */
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    color: #333;
-    font-size: 0.9rem;
+    text-align: center; /* Center footer text */
+    padding: 20px; /* Add padding */
+    background-color: #fff; /* Set background color */
+    color: #333; /* Set text color */
+    font-size: 0.9rem; /* Set font size */
 }
